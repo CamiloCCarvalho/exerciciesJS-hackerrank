@@ -19,6 +19,7 @@ function readLine() {
 }
 
 
+// Ignore the code above, it's used to run on HackerHamk site
 
 function solveMeFirst(a, b) {
     
