@@ -29,6 +29,8 @@ function readLine() {
  * The function accepts INTEGER_ARRAY ar as parameter.
  */
 
+// ignore the code above, it's used to run code at HackerHank site
+
 function simpleArraySum(ar) {
     
     var sum = 0
@@ -38,6 +40,7 @@ function simpleArraySum(ar) {
     
     return sum
 }
+// ignore the code below, it's used to run code at HackerHank site
 
 
 function main() {
