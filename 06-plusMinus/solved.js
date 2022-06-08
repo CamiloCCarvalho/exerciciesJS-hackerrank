@@ -29,9 +29,25 @@ function readLine() {
 // Ignore the code above, It's used to run at site HackerHank
 
 function plusMinus(arr) {
+    var plus =0
+    var minus =0
+    var equal =0
     
-    // Write your code here
-
+    for(let i=0; i < arr.length; i++){
+        if(arr[i] < 0)
+        {
+            minus++ 
+        }else if(arr[i] == 0)
+        {
+            equal++
+        }else
+        {
+            plus++
+        }
+    }
+    console.log(parseFloat(plus/arr.length).toFixed(6) + '\n' +
+    parseFloat(minus/arr.length).toFixed(6) + '\n' +
+     parseFloat(equal/arr.length).toFixed(6))
 }
 
 // Ignore the code below, It's used to run at site HackerHank
