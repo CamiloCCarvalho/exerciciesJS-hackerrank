@@ -26,10 +26,15 @@ function readLine() {
  * The function accepts INTEGER n as parameter.
  */
 
+// Ignore de code above, it's used to run at site HackerHank
+
 function staircase(n) {
-    // Write your code here
+    
+    
 
 }
+
+// Ignore de code above, it's used to run at site HackerHank
 
 function main() {
     const n = parseInt(readLine().trim(), 10);
