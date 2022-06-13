@@ -32,9 +32,23 @@ function readLine() {
 //Ignore the code above, It's used to run at site HackerRank
 
 function birthdayCakeCandles(candles) {
-    
-    
-
+    candles.sort(function(a,b){
+        if(a > b){
+            return 1
+        }
+        if(a < b){
+            return -1
+        }
+        return 0
+    })
+    var num = 1
+    var tall = candles[candles.length-1]
+    for(let i=candles.length-2; i >=0;  i--){
+        if(candles[i] == tall){
+            num++
+        }
+    }
+    return num
 }
 
 //Ignore the code below, It's used to run at site HackerRank
