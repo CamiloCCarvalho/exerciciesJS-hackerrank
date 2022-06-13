@@ -61,7 +61,7 @@ The second line contains  space-separated integers describing the respective val
 
 The diagram below depicts the number of times Maria broke her best and worst records throughout the season:
 
-![alt text](rsc/basketballscore0.png)
+![alt text](rsc/basketballscore0.jpg)
 
 She broke her best record twice (after games **2** and **7** ) and her worst record four times (after games **1**, **4**, **7** and **8** ), so we print *2 4* as our answer. Note that she did not break her record for best score during game **3**, as her score during that game was not strictly greater than her best record at the time.
 
@@ -81,6 +81,6 @@ She broke her best record twice (after games **2** and **7** ) and her worst rec
 
 The diagram below depicts the number of times Maria broke her best and worst records throughout the season:
 
-![alt text](rsc/basketballscore1.png)
+![alt text](rsc/basketballscore1.jpg)
 
 She broke her best record four times (after games **1**, **2**, **3** and **9** ) and her worst record zero times (no score during the season was lower than the one she earned during her first game), so we print 4 0 as our answer.
