@@ -30,8 +30,19 @@ function readLine() {
 
 
 function miniMaxSum(arr) {
-
     
+    let n1 = 0
+    let n2 = 0
+    arr.sort()
+    for(let i=0; i < arr.length; i++){
+        if(i < arr.length-1){
+            n1 += arr[i]
+        }
+        if(i > 0){
+            n2 += arr[i]
+        }
+    }
+    console.log(n1 + ' ' + n2)
 
 }
 
