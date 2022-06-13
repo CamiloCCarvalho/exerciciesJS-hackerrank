@@ -29,7 +29,7 @@ function readLine() {
  * The function accepts LONG_INTEGER_ARRAY ar as parameter.
  */
 
-// Ignore de code above, it's used to run at site HackerHank
+// Ignore de code above, it's used to run at site HackerRank
 
 function aVeryBigSum(ar) {
     
@@ -37,7 +37,7 @@ function aVeryBigSum(ar) {
 
 }
 
-// Ignore de code below, it's used to run at site HackerHank
+// Ignore de code below, it's used to run at site HackerRank
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);

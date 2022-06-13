@@ -26,7 +26,7 @@ function readLine() {
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-// Ignore the code above, It's used to run at site HackerHank
+// Ignore the code above, It's used to run at site HackerRank
 
 function plusMinus(arr) {
     
@@ -34,7 +34,7 @@ function plusMinus(arr) {
 
 }
 
-// Ignore the code below, It's used to run at site HackerHank
+// Ignore the code below, It's used to run at site HackerRank
 
 function main() {
     const n = parseInt(readLine().trim(), 10);

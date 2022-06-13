@@ -29,14 +29,14 @@ function readLine() {
  * The function accepts INTEGER_ARRAY ar as parameter.
  */
 
-// ignore the code above, it's used to run code at HackerHank site
+// ignore the code above, it's used to run code at HackerRank site
 
 function simpleArraySum(ar) {
     
     // Write your code here
 
 }
-// ignore the code below, it's used to run code at HackerHank site
+// ignore the code below, it's used to run code at HackerRank site
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);

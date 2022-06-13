@@ -29,7 +29,7 @@ function readLine() {
  * The function accepts 2D_INTEGER_ARRAY arr as parameter.
  */
 
-// Ignore the code above, it's used to run at site HackerHank
+// Ignore the code above, it's used to run at site HackerRank
 
 function diagonalDifference(arr) {
     
@@ -48,7 +48,7 @@ function diagonalDifference(arr) {
     return Math.abs(a - b)
 }
 
-// Ignore the code above, it's used to run at site HackerHank
+// Ignore the code above, it's used to run at site HackerRank
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);

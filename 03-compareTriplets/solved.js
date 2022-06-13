@@ -31,7 +31,7 @@ function readLine() {
  *  2. INTEGER_ARRAY b
  */
 
-// Ignore the code above, it's used to run at site HackerHank
+// Ignore the code above, it's used to run at site HackerRank
 
 function compareTriplets(a, b) {
     
@@ -46,7 +46,7 @@ function compareTriplets(a, b) {
     return res
 }
 
-// Ignore the code below, it's used to run at site HackerHank
+// Ignore the code below, it's used to run at site HackerRank
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);

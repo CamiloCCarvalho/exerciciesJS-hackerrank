@@ -19,7 +19,7 @@ function readLine() {
 }
 
 
-// Ignore the code above, it's used to run on HackerHamk site
+// Ignore the code above, it's used to run on HackerRank site
 
 function solveMeFirst(a, b) {
     

@@ -18,13 +18,15 @@ function readLine() {
     return input_stdin_array[input_currentline++];
 }
 
-
+// Ignore the code above, it's used to run on HackerRank site
 
 function solveMeFirst(a, b) {
     
   // Hint: Type return a+b below
         return a + b
 }
+
+// ____Ignore the code below, it is necessary to run in site hackerRank____
 
 
 function main() {
