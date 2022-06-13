@@ -1,3 +1,0 @@
-let tex = " "
-
-return tex
