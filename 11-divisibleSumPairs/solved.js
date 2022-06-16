@@ -36,7 +36,6 @@ function divisibleSumPairs(n, k, ar) {
   for (let i = 0; i < ar.length; i++) {
     for (let j = i + 1; j < ar.length; j++) {
       if ((ar[i] + ar[j]) % k == 0) {
-        // eslint-disable-next-line no-plusplus
         res++
       }
     }
