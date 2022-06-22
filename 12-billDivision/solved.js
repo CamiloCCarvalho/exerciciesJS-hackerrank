@@ -30,9 +30,13 @@ function readLine() {
  */
 // Ignore the code above, it used to run at site HackerRank
 function bonAppetit(bill, k, b) {
-
-    // Write your code here
-
+    bill.splice(k, 1)
+    let res = b - (bill.reduce((a,b)=>a+b,0)/2)
+    if(res != 0){
+        console.log(res) 
+    }else{
+        return console.log('Bon Appetit')
+    }
 }
 // Ignore the code below, it used to run at site HackerRank
 
