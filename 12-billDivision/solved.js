@@ -28,11 +28,13 @@ function readLine() {
  *  2. INTEGER k
  *  3. INTEGER b
  */
-
+// Ignore the code above, it used to run at site HackerRank
 function bonAppetit(bill, k, b) {
+
     // Write your code here
 
 }
+// Ignore the code below, it used to run at site HackerRank
 
 function main() {
     const firstMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
