@@ -1,3 +1,5 @@
+# Bill Division ( Bon Appetit )
+
 Two friends Anna and Brian, are deciding how to split the bill at a dinner. Each will only pay for the items they consume. Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
 
 
@@ -6,7 +8,9 @@ For example, assume the bill has the following prices: . Anna declines to eat it
 
 # Function Description
 
-Complete the bonAppetit function in the editor below. It should print Bon Appetit if the bill is fairly split. Otherwise, it should print the integer amount of money that Brian owes Anna.
+Complete the bonAppetit function in the editor below. It should print **Bon Appetit** if the bill is fairly split.
+
+Otherwise, it should print the integer amount of money that Brian owes Anna.
 
 
 ## bonAppetit has the following parameter(s):
@@ -18,22 +22,26 @@ Complete the bonAppetit function in the editor below. It should print Bon Appeti
 
 ## Input Format
 
-The first line contains two space-separated integers  and , the number of items ordered and the -based index of the item that Anna did not eat.
+The first line contains two space-separated integers *n* and *k*, the number of items ordered and the -based index of the item that Anna did not eat.
 
-The second line contains  space-separated integers  where .
+The second line contains  space-separated integers  where **0 <= *i* < *n***.
 
-The third line contains an integer, , the amount of money that Brian charged Anna for her share of the bill.
+The third line contains an integer, *b*, the amount of money that Brian charged Anna for her share of the bill.
 
 
 ## Constraints
 
+    2 <= n <= 10^5
+    0 <= k < n
+    0 <= bill[i] <= 10^4
+    0<= b <= bill[i]
 
-The amount of money due Anna will always be an integer
+    • The amount of money due Anna will always be an integer
 
 
 ## Output Format
 
-    If Brian did not overcharge Anna, print Bon Appetit on a new line; otherwise, print the difference (i.e., ) that Brian must refund to Anna. This will always be an integer.
+If Brian did not overcharge Anna, print **Bon Appetit** on a new line; otherwise, print the difference (i.e.,*b(changed) - b(actual)* ) that Brian must refund to Anna. This will always be an integer.
 
 
 ## Sample Input 0
@@ -52,7 +60,7 @@ The amount of money due Anna will always be an integer
 
 ## Explanation 0
 
-Anna didn't eat item , but she shared the rest of the items with Brian. The total cost of the shared items is  and, split in half, the cost per person is . Brian charged her  for her portion of the bill. We print the amount Anna was overcharged, , on a new line.
+Anna didn't eat item **bill[i] = 10**, but she shared the rest of the items with Brian. The total cost of the shared items is **3+2+9 = 14** and, split in half, the cost per person is *b(actual) = 7*. Brian charged her *b(changed) = 12* for her portion of the bill. We print the amount Anna was overcharged, *b(changed) - b(actual) = 12-7 = 5* , on a new line.
 
 
 ## Sample Input 1
@@ -71,4 +79,4 @@ Anna didn't eat item , but she shared the rest of the items with Brian. The tota
 
 ## Explanation 1
 
-Anna didn't eat item , but she shared the rest of the items with Brian. The total cost of the shared items is  and, split in half, the cost per person is . Because , we print Bon Appetit on a new line.
+Anna didn't eat item **bill[i] = 10**, but she shared the rest of the items with Brian. The total cost of the shared items is **3+2+9 = 14** and, split in half, the cost per person is *b(actual) = 7*. Because *b(actual) = b(changed) = 7*, we print **Bon Appetit** on a new line.
