@@ -32,9 +32,12 @@ The third line contains an integer, *b*, the amount of money that Brian charged 
 ## Constraints
 
     2 <= n <= 10^5
+
     0 <= k < n
+
     0 <= bill[i] <= 10^4
-    0<= b <= bill[i]
+    
+    0 <= b <= bill[i]
 
     • The amount of money due Anna will always be an integer
 
