@@ -41,7 +41,7 @@ The third line contains an integer, *b*, the amount of money that Brian charged 
 
 ## Output Format
 
-If Brian did not overcharge Anna, print **Bon Appetit** on a new line; otherwise, print the difference (i.e.,*b(changed) - b(actual)* ) that Brian must refund to Anna. This will always be an integer.
+If Brian did not overcharge Anna, print **Bon Appetit** on a new line; otherwise, print the difference (i.e.,  *b(changed) - b(actual)*  ) that Brian must refund to Anna. This will always be an integer.
 
 
 ## Sample Input 0
