@@ -1,85 +1,64 @@
-# Bill Division ( Bon Appetit )
+<h align="center">Cat and Mouse</h>
 
-Two friends Anna and Brian, are deciding how to split the bill at a dinner. Each will only pay for the items they consume. Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
+Two cats and a mouse are at various positions on a line. You will be given their starting positions. Your task is to determine which cat will reach the mouse first, assuming the mouse does not move and the cats travel at equal speed. If the cats arrive at the same time, the mouse will be allowed to move and it will escape while they fight.
+
+You are given *q* queries in the form of *x, y and z* representing the respective positions for cats **A** and **B**, and for mouse **C**. Complete the function  *catAndMouse*  to return the appropriate answer to each query which will be printed on a new line.
+
+- if cat **A** catches the mouse first, print **Cat A**
+- if cat **B** catches the mouse first, print **Cat B**
+- if both cats reach the mouse at the same time, print **Mouse C** as the two cats fight and mouse escapes.
+
+## Example
+
+    x = 2
+    y = 5
+    z = 4
 
 
-For example, assume the bill has the following prices: . Anna declines to eat item  which costs . If Brian calculates the bill correctly, Anna will pay . If he includes the cost of , he will calculate . In the second case, he should refund  to Anna.
+the cats are at positions **2(Cat A) and 5(Cat B)**, and the mouse is ate position **4**. Cat B, at position 5 will arrive first since it is only 1 unit away while the other is 2 units away. Return **Cat B**
+
+## Function Description
+
+Complete the catAndMouse function in the editor below.
+
+### catAndMouse has the following parameter(s):
+
+    int x: Cat A's position
+    int y: Cat B's position
+    int z: Mouse C's position
 
 
-# Function Description
+## Return
 
-Complete the bonAppetit function in the editor below. It should print **Bon Appetit** if the bill is fairly split.
-
-Otherwise, it should print the integer amount of money that Brian owes Anna.
-
-
-## bonAppetit has the following parameter(s):
-
-- bill: an array of integers representing the cost of each item ordered
-- k: an integer representing the zero-based index of the item Anna doesn't eat
-- b: the amount of money that Anna contributed to the bill
-
+- string: Either 'Cat A', 'Cat B', or 'Mouse C'
 
 ## Input Format
 
-The first line contains two space-separated integers *n* and *k*, the number of items ordered and the -based index of the item that Anna did not eat.
+The first line contains a single integer, *q*, denoting the number of queries.
+Each of the *q* subsequent lines contains three space-separated integers describing the respective values of *x* (cat **A**'s location), *y* (cat **B**'s location), and *z* (mouse **C**'s location).
 
-The second line contains  space-separated integers  where **0 <= *i* < *n***.
+## Coinstraints
 
-The third line contains an integer, *b*, the amount of money that Brian charged Anna for her share of the bill.
-
-
-## Constraints
-
-    2 <= n <= 10^5
-
-    0 <= k < n
-
-    0 <= bill[i] <= 10^4
-    
-    0 <= b <= bill[i]
-
-    • The amount of money due Anna will always be an integer
-
-
-## Output Format
-
-If Brian did not overcharge Anna, print **Bon Appetit** on a new line; otherwise, print the difference (i.e.,  *b(changed) - b(actual)*  ) that Brian must refund to Anna. This will always be an integer.
-
+- 1 <= q <= 100
+- 1 <= x, y, z <= 100
 
 ## Sample Input 0
 
-    4 1
-
-    3 10 2 9
-
-    12
+    2
+    1  2  3
+    1  3  2
 
 
 ## Sample Output 0
 
-    5
+    Cat B
+    mouse C
 
 
-## Explanation 0
+## Explanation 0 
 
-Anna didn't eat item **bill[i] = 10**, but she shared the rest of the items with Brian. The total cost of the shared items is **3+2+9 = 14** and, split in half, the cost per person is *b(actual) = 7*. Brian charged her *b(changed) = 12* for her portion of the bill. We print the amount Anna was overcharged, *b(changed) - b(actual) = 12-7 = 5* , on a new line.
+Query 0: The positions of the cats and mouse are shown below
 
-
-## Sample Input 1
-
-    4 1
-
-    3 10 2 9
-
-    7
+<img src="rsc/img1.png" alt="Position Cats and Mouse, query: 0">
 
 
-## Sample Output 1
-
-    Bon Appetit
-
-
-## Explanation 1
-
-Anna didn't eat item **bill[i] = 10**, but she shared the rest of the items with Brian. The total cost of the shared items is **3+2+9 = 14** and, split in half, the cost per person is *b(actual) = 7*. Because *b(actual) = b(changed) = 7*, we print **Bon Appetit** on a new line.
