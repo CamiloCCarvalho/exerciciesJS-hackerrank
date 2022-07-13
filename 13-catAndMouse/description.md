@@ -59,6 +59,13 @@ Each of the *q* subsequent lines contains three space-separated integers describ
 
 Query 0: The positions of the cats and mouse are shown below
 
-<img src="rsc/img1.png" alt="Position Cats and Mouse, query: 0">
+<img src="rsc/query0.png" alt="Position Cats and Mouse, query: 0">
 
+Cat **B** will catch the mouse first, so we print **Cat B** on a new line.
+
+Query 1: in this query, cats **A** and **B** reach mouse **C** at the exact same time:
+
+<img src="rsc/query1.png" alt="Position Cats and Mouse, query: 1">
+
+Because the mouse escapes, we print **Mouse C** on a new line.
 
