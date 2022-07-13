@@ -8,14 +8,12 @@ process.stdin.setEncoding('utf-8');
 let inputString = '';
 let currentLine = 0;
 
-process.stdin.on('data', inputStdin => {
+process.stdin.on('data', function(inputStdin) {
     inputString += inputStdin;
 });
 
-process.stdin.on('end', _ => {
-    inputString = inputString.replace(/\s*$/, '')
-        .split('\n')
-        .map(str => str.replace(/\s*$/, ''));
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
 
     main();
 });
@@ -24,38 +22,42 @@ function readLine() {
     return inputString[currentLine++];
 }
 
+/*
+ * Complete the 'hurdleRace' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts following parameters:
+ *  1. INTEGER k
+ *  2. INTEGER_ARRAY height
+ */
+
 // Ignore the code above, it's used to run at site hackerrank
-function catAndMouse(x, y, z) {
-    const catAtoMouse = Math.abs(z - x)
-    const catBtoMouse = Math.abs(z - y)
-    if(catAtoMouse === catBtoMouse){
-        return 'Mouse C'
-    }else if(catAtoMouse > catBtoMouse){
-        return 'Cat B'
-    }else {
-        return 'Cat A'
+function hurdleRace(k, height) {
+    
+    height.sort((a,b)=>{return b-a})
+    if(k > height[0]){
+        return 0
+    }else{
+        return height[0]-k
     }
+
 }
 // Ignore the code below, it's used to run at site hackerrank
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
-    const q = parseInt(readLine(), 10);
+    const firstMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
 
-    for (let qItr = 0; qItr < q; qItr++) {
-        const xyz = readLine().split(' ');
+    const n = parseInt(firstMultipleInput[0], 10);
 
-        const x = parseInt(xyz[0], 10);
+    const k = parseInt(firstMultipleInput[1], 10);
 
-        const y = parseInt(xyz[1], 10);
+    const height = readLine().replace(/\s+$/g, '').split(' ').map(heightTemp => parseInt(heightTemp, 10));
 
-        const z = parseInt(xyz[2], 10);
+    const result = hurdleRace(k, height);
 
-        let result = catAndMouse(x, y, z);
-
-        ws.write(result + "\n");
-    }
+    ws.write(result + '\n');
 
     ws.end();
 }
