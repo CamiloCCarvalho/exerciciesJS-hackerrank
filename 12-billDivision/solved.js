@@ -33,7 +33,7 @@ function bonAppetit(bill, k, b) {
     bill.splice(k, 1)
     let res = b - (bill.reduce((a,b)=>a+b,0)/2)
     if(res != 0){
-        console.log(res) 
+        return console.log(res) 
     }else{
         return console.log('Bon Appetit')
     }
