@@ -50,7 +50,6 @@ function breakingRecords(scores) {
                 ar[0]++
             }
         }
-        
     }
     return ar
 }
