@@ -36,8 +36,27 @@ function readLine() {
 // Igonre the code above, it's used to run at site hackerrank
 function kangaroo(x1, v1, x2, v2) {
     
-    // Write your code here
-
+    let pk1 = x1 + v1
+    let pk2 = x2 + v2
+    let firstGap = null;
+    let secondGap = null;
+    if(pk1 > pk2){
+        firstGap = pk1 + pk2
+        secondGap = (pk1 += v1) - (pk2 += v2)
+    }else{
+        firstGap = pk2 - pk1
+        secondGap = (pk2 += v2) - (pk1 += v1)
+    }
+    if(secondGap >= firstGap){
+        return "NO"
+    }else{
+        let t = secondGap - firstGap
+        if(secondGap%t == 0){
+            return "YES"
+        }else{
+            return "NO"
+        }
+    }
 }
 // Igonre the code below, it's used to run at site hackerrank
 function main() {
