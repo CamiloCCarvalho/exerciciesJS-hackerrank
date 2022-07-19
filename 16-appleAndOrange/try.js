@@ -35,7 +35,7 @@ function readLine() {
 // Ignore the code above, it's used to run at site hackerrank
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
     
-    
+    // Write your code here
 
 }
 // Ignore the code below, it's used to run at site hackerrank
