@@ -34,8 +34,20 @@ function readLine() {
 
 // Ignore the code above, it's used to run at site hackerrank
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    let numberApples = 0
+    let numberOranges = 0
+    for(let i=0; i<apples.length; i++){
+        if(a+apples[i] >= s && a+apples[i] <= t){
+            numberApples++
+        }
+    }
+    for(let i=0; i<oranges.length; i++){
+        if(b+oranges[i] <= t && b+oranges[i] >= s){
+            numberOranges++
+        }
+    }
     
-    
+    return console.log(`${numberApples}\n${numberOranges}`)
 
 }
 // Ignore the code below, it's used to run at site hackerrank
