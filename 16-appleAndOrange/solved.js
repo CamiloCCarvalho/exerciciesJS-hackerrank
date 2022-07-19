@@ -1,4 +1,24 @@
-<?php
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', function(inputStdin) {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
 
 /*
  * Complete the 'countApplesAndOranges' function below.
@@ -12,52 +32,36 @@
  *  6. INTEGER_ARRAY oranges
  */
 
-function countApplesAndOranges($s, $t, $a, $b, $apples, $oranges) {
+// Ignore the code above, it's used to run at site hackerrank
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
     
-    $na = 0;
-    $no = 0;
     
-    for($i=0; $i < count($apples); $i++):
-        if($a+$apples[$i] >= $s && $a+$apples[$i] <= $t){
-            $na++;
-        }
-    endfor;
-    for($j=0; $j < count($oranges); $j++):
-        if($b+$oranges[$j] <= $t && $b+$oranges[$j] >= $s){
-            $no++;
-        }
-    endfor;
-    echo ($na ."\n");
-    echo ($no);
+
 }
+// Ignore the code below, it's used to run at site hackerrank
 
+function main() {
+    const firstMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
 
-// ____Ignore the code below, it is necessary to run in site hackerRank____
+    const s = parseInt(firstMultipleInput[0], 10);
 
-$first_multiple_input = explode(' ', rtrim(fgets(STDIN)));
+    const t = parseInt(firstMultipleInput[1], 10);
 
-$s = intval($first_multiple_input[0]);
+    const secondMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
 
-$t = intval($first_multiple_input[1]);
+    const a = parseInt(secondMultipleInput[0], 10);
 
-$second_multiple_input = explode(' ', rtrim(fgets(STDIN)));
+    const b = parseInt(secondMultipleInput[1], 10);
 
-$a = intval($second_multiple_input[0]);
+    const thirdMultipleInput = readLine().replace(/\s+$/g, '').split(' ');
 
-$b = intval($second_multiple_input[1]);
+    const m = parseInt(thirdMultipleInput[0], 10);
 
-$third_multiple_input = explode(' ', rtrim(fgets(STDIN)));
+    const n = parseInt(thirdMultipleInput[1], 10);
 
-$m = intval($third_multiple_input[0]);
+    const apples = readLine().replace(/\s+$/g, '').split(' ').map(applesTemp => parseInt(applesTemp, 10));
 
-$n = intval($third_multiple_input[1]);
+    const oranges = readLine().replace(/\s+$/g, '').split(' ').map(orangesTemp => parseInt(orangesTemp, 10));
 
-$apples_temp = rtrim(fgets(STDIN));
-
-$apples = array_map('intval', preg_split('/ /', $apples_temp, -1, PREG_SPLIT_NO_EMPTY));
-
-$oranges_temp = rtrim(fgets(STDIN));
-
-$oranges = array_map('intval', preg_split('/ /', $oranges_temp, -1, PREG_SPLIT_NO_EMPTY));
-
-countApplesAndOranges($s, $t, $a, $b, $apples, $oranges);
+    countApplesAndOranges(s, t, a, b, apples, oranges);
+}
