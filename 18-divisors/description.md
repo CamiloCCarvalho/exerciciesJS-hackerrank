@@ -28,22 +28,24 @@ Complete the findDigits function in the editor below.
 
 findDigits has the following parameter(s):
 
-int n: the value to analyze
+- int n: the value to analyze
 
 
 ## Returns
 
-    int: the number of digits in  that are divisors of
+- int: the number of digits in *n* that are divisors of *n*
 
 
 ## Input Format
 
-The first line is an integer, , the number of test cases.
-The  subsequent lines each contain an integer, .
+The first line is an integer, *t*, the number of test cases.
+The *t* subsequent lines each contain an integer,*n*.
 
 ## Constraints
 
+    1 <= t <= 15
 
+    0 < n < 10^9
 
 ## Sample Input
 
@@ -63,6 +65,6 @@ The  subsequent lines each contain an integer, .
 
 ## Explanation
 
-The number  is broken into two digits,  and . When  is divided by either of those two digits, the remainder is  so they are both divisors.
+The number *12* is broken into two digits, *1* and *2*. When *12* is divided by either of those two digits, the remainder is *0* so they are both divisors.
 
-The number  is broken into four digits, , , , and .  is evenly divisible by its digits , , and , but it is not divisible by  as division by zero is undefined.
+The number *1012* is broken into four digits, *1*, *0*, *1*, and *2*. *1012* is evenly divisible by its digits *1*, *1*, and *2*, but it is not divisible by *0* as division by zero is **undefined**.
