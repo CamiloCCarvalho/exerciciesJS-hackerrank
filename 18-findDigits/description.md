@@ -1,4 +1,4 @@
-<h1 align="center">Divisors</h1>
+<h1 align="center">Find Digits</h1>
 
 
 An integer **d** is a divisor of an integer **n** if the remainder of ***n % d = 0*** .
