@@ -31,7 +31,7 @@ function readLine() {
  *  2. INTEGER j
  *  3. INTEGER k
  */
-
+// Ignore the code above, it's used to run at site hackerrank
 function beautifulDays(i, j, k) {
     let days = 0
     for(i; i<=j; i++){
@@ -39,7 +39,7 @@ function beautifulDays(i, j, k) {
         days += ((i - numInverse)%k == 0) ? 1:0}
     return days
 }
-
+// Ignore the code below, it's used to run at site hackerrank
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
