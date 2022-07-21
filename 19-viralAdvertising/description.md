@@ -12,12 +12,12 @@ Each day, *floor(recipents / 2)* of the recipients like the advertisement and wi
 
 - n = 5
 
-    Day Shared Liked Cumulative
-    1      5     2       2
-    2      6     3       5
-    3      9     4       9
-    4     12     6      15
-    5     18     9      24
+        Day Shared Liked Cumulative
+        1      5     2       2
+        2      6     3       5
+        3      9     4       9
+        4     12     6      15
+        5     18     9      24
 
 
 The progression is shown above. The cumulative number of likes on the  day is .
