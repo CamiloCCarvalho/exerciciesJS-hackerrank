@@ -39,20 +39,27 @@ viralAdvertising has the following parameter(s):
 
 ## Input Format
 
-A single integer, , the day number.
+A single integer, *n*, the day number.
 
-Constraints
 
-Sample Input
+## Constraints
 
-3
-Sample Output
+    1<= n <= 50
 
-9
-Explanation
+## Sample Input
+
+    3
+
+
+## Sample Output
+
+    9
+
+
+## Explanation
 
 This example is depicted in the following diagram:
 
 strange ad.png
 
- people liked the advertisement on the first day,  people liked the advertisement on the second day and  people liked the advertisement on the third day, so the answer is .
+**2** people liked the advertisement on the first day, **3** people liked the advertisement on the second day and **4** people liked the advertisement on the third day, so the answer is **2 + 3 + 4 = 9**.
