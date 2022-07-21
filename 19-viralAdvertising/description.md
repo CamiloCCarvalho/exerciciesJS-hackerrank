@@ -44,7 +44,7 @@ A single integer, *n*, the day number.
 
 ## Constraints
 
-    1<= n <= 50
+    1 <= n <= 50
 
 ## Sample Input
 
