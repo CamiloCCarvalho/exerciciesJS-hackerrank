@@ -28,19 +28,12 @@ function readLine() {
  * The function is expected to return an INTEGER.
  * The function accepts INTEGER n as parameter.
  */
-
+// Ignore the code above, it's used to run at site hackerrank
 function viralAdvertising(n) {
-    let cumulative = 0
-    let people = 5
-    let sharers = 0
-    for(let i=1; i<=n; i++){
-        cumulative += Math.floor(people/2)
-        sharers = Math.floor(people/2)
-        people = sharers*3
-    }
-    return cumulative
+    
+    // Write your code here
 }
-
+// Ignore the code below, it's used to run at site hackerrank
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
