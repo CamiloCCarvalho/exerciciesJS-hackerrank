@@ -1,4 +1,4 @@
-# Given a square matrix, calculate the absolute difference between the sums of its diagonals.
+<h1 align="center">Given a square matrix, calculate the absolute difference between the sums of its diagonals.</h1>
 
 ## For example, the square matrix  is shown below:
 
