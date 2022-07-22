@@ -31,21 +31,13 @@ function readLine() {
  *  2. INTEGER k
  *  3. INTEGER_ARRAY queries
  */
-
+// Ignore the code above, it's used to run at site hackerrank
 function circularArrayRotation(a, k, queries) {
-    let x = 1
-    let aQueries = []
-    while(x <= k){
-        let temp = a.pop()
-        a.unshift(temp)
-        x++
-    }
-    for(let i=0; i<queries.length; i++){
-        aQueries[i] = a[queries[i]]
-    }
-    return aQueries
-}
+    
+    // Write your code here
 
+}
+// Ignore the code below, it's used to run at site hackerrank
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
