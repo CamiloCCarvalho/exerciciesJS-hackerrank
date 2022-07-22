@@ -18,6 +18,8 @@ Here *k* is the number of rotations on *a*, and *queries* holds the list of indi
 
 Now return the values from the zero-based indices *1* and *2* as indicated in the *queries* array.
 
+- **a[1] = 5**
+- **a[2] = 3**
 
 ## Function Description
 
@@ -32,19 +34,25 @@ circularArrayRotation has the following parameter(s):
 
 ## Returns
 
-     int[q]: the values in the rotated  as requested in 
+- int[q]: the values in the rotated *a* as requested in *m*
 
 
 ## Input Format
 
-The first line contains  space-separated integers, , , and , the number of elements in the integer array, the rotation count and the number of queries.
+The first line contains *3* space-separated integers, *n*, *k*, and *q*, the number of elements in the integer array, the rotation count and the number of queries.
 
-The second line contains  space-separated integers, where each integer  describes array element  (where ).
+The second line contains *n* space-separated integers, where each integer *i* describes array element *a[i]* (where *0 <= i <= n*).
 
-Each of the  subsequent lines contains a single integer, , an index of an element in  to return.
+Each of the *q* subsequent lines contains a single integer, *queries[i]*, an index of an element in *a* to return.
 
 
 ## Constraints
+
+- 1<= n <= 10^5
+- 1 <= a[i] <= 10^5
+- 1 <= k <= 10^5
+- 1 <= q <= 500
+- 0 <= queries[i] < n
 
 
 ## Sample Input 0
@@ -65,11 +73,13 @@ Each of the  subsequent lines contains a single integer, , an index of an elemen
 
 ## Explanation 0
 
-After the first rotation, the array is .
-After the second (and final) rotation, the array is .
+After the first rotation, the array is *[3,1,2]*.
 
-We will call this final state array . For each query, we just have to get the value of .
+After the second (and final) rotation, the array is *[2,3,1]*.
 
-, .
-, .
-, .
+
+We will call this final state array *b = [2,3,1]*. For each query, we just have to get the value of *b[ queries[i] ]*.
+
+- 1. *queries[0] = 0, b[0] = **2***
+- 2. *queries[1] = 1, b[1] = **3***
+- 3. *queries[2] = 2, b[2] = **1***
