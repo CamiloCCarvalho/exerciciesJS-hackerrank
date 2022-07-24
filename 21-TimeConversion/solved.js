@@ -28,7 +28,7 @@ function readLine() {
  * The function is expected to return a STRING.
  * The function accepts STRING s as parameter.
  */
-
+// Ignore the code above, it's used to run at site hackerrank
 function timeConversion(s) {
     if(s.includes("AM") && Number(s.slice(0,2)) != 12 || (s.includes("PM") && Number(s.slice(0,2)) == 12)){
         return (s.substring(0, s.length-2))
@@ -40,7 +40,7 @@ function timeConversion(s) {
         return (numb += task.substring(2, task.length))
     }
 }
-
+// Ignore the code below, it's used to run at site hackerrank
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
