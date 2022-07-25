@@ -28,9 +28,8 @@ function readLine() {
  * The function is expected to return an INTEGER_ARRAY.
  * The function accepts INTEGER_ARRAY grades as parameter.
  */
-
+// Ignore the code above, it's used to run at hackerrank website
 function gradingStudents(grades) {
-    
     
     grades.map((element, index) => {
         if(element >= 38 && element%5 == 3){
@@ -41,7 +40,7 @@ function gradingStudents(grades) {
     })
     return grades
 }
-
+// Ignore the code below, it's used to run at hackerrank website
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
