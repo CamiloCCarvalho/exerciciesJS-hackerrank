@@ -56,7 +56,7 @@ Print the minimum number of jumps needed to win the game.
 
 The player must avoid **c[2]** and **c[5]**. The game can be won with a minimum of **4** jumps:
 
-jump(2).png
+<img src="rsc/jump1.png" alt="jumping on the clouds example 1">
 
 
 ## Sample Input 1
@@ -75,4 +75,4 @@ jump(2).png
 
 The only thundercloud to avoid is **c[4]**. The game can be won in **3** jumps:
 
-jump(5).png
+<img src="rsc/jump2.png" alt="jumping on the clouds example 2">
