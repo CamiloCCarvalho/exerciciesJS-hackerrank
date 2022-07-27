@@ -28,18 +28,13 @@ function readLine() {
  * The function is expected to return an INTEGER.
  * The function accepts INTEGER_ARRAY c as parameter.
  */
-
+// Ignore the code above, it's used to run at hackerrank website
 function jumpingOnClouds(c) {
-    let jumps = 0
-    let index = 0
-    while(index < c.length-1){
-        
-        index += (c[index+2]===0 ? 2:1)
-        jumps++
-    }
-    return jumps
-}
+    
+        // Write your code here
 
+}
+// Ignore the code below, it's used to run at hackerrank website
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
