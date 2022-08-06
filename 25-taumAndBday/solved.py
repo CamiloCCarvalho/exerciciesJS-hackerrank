@@ -17,9 +17,9 @@ import sys
 #  4. INTEGER wc
 #  5. INTEGER z
 #
-    // Complete the taumBday function below
+    # Complete the taumBday function below
 def taumBday(b, w, bc, wc, z):
-    // Solution in JS without external library is sendvel
+    # Solution in JS without external library is sendvel
     return b*min(bc, wc+z) + w*min(wc,bc+z)
 
 if __name__ == '__main__':

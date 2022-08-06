@@ -18,9 +18,10 @@ import sys
 #  5. INTEGER z
 #
 
-// Complete the TaumBday function below
+    # Complete the TaumBday function below
 def taumBday(b, w, bc, wc, z):
-    // Write your code here
+    # Write your code here
+    return #?
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
