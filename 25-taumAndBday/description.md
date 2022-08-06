@@ -52,46 +52,54 @@ The next *t* pairs of lines are as follows:
 
 ## Constraints
 
+    1 <= t <= 10
+    0 <= b, w, bc, wc, z <= 10^9
 
 
-Output Format
+## Output Format
 
- lines, each containing an integer: the minimum amount of units Taum needs to spend on gifts.
+*t* lines, each containing an integer: the minimum amount of units Taum needs to spend on gifts.
 
-Sample Input
 
-STDIN   Function
------   --------
-5       t = 5
-10 10   b = 10, w = 10
-1 1 1   bc = 1, wc = 1, z = 1
-5 9     b = 5, w = 5
-2 3 4   bc = 2, wc = 3, z = 4
-3 6     b = 3, w = 6
-9 1 1   bc = 9, wc = 1, z = 1
-7 7     b = 7, w = 7
-4 2 1   bc = 4, wc = 2, z = 1
-3 3     b = 3, w = 3
-1 9 2   bc = 1, wc = 9, z = 2
-Sample Output
+## Sample Input
 
-20
-37
-12
-35
-12
-Explanation
+        STDIN   Function
+        -----   --------
+        5       t = 5
+        10 10   b = 10, w = 10
+        1 1 1   bc = 1, wc = 1, z = 1
+        5 9     b = 5, w = 5
+        2 3 4   bc = 2, wc = 3, z = 4
+        3 6     b = 3, w = 6
+        9 1 1   bc = 9, wc = 1, z = 1
+        7 7     b = 7, w = 7
+        4 2 1   bc = 4, wc = 2, z = 1
+        3 3     b = 3, w = 3
+        1 9 2   bc = 1, wc = 9, z = 2
 
-Test Case #01:
-Since black gifts cost the same as white, there is no benefit to converting the gifts. Taum will have to buy each gift for 1 unit. The cost of buying all gifts will be: .
 
-Test Case #02:
-Again, he cannot decrease the cost of black or white gifts by converting colors.  is too high. He will buy gifts at their original prices, so the cost of buying all gifts will be: .
+## Sample Output
 
-Test Case #03:
-Since , he will buy  white gifts at their original price of .  of the gifts must be black, and the cost per conversion, . Total cost is .
+        20
+        37
+        12
+        35
+        12
 
-Test Case #04:
-Similarly, he will buy  white gifts at their original price, . For black gifts, he will first buy white ones and color them to black, so that their cost will be reduced to . So cost of buying all gifts will be: .
 
-Test Case #05: He will buy black gifts at their original price, . For white gifts, he will first black gifts worth  unit and color them to white for  units. The cost for white gifts is reduced to  units. The cost of buying all gifts will be: .
+## Explanation
+
+• Test Case #01:
+Since black gifts cost the same as white, there is no benefit to converting the gifts. Taum will have to buy each gift for 1 unit. The cost of buying all gifts will be: *b * bc + w * wc = 10 * 1 + 10 * 1 = 20*.
+
+• Test Case #02:
+Again, he cannot decrease the cost of black or white gifts by converting colors.*z* is too high. He will buy gifts at their original prices, so the cost of buying all gifts will be: *b * bc + w * wc = 5 * 2 + 9 * 3 = 10 + 27 = 37*.
+
+• Test Case #03:
+Since *bc > wb + z*, he will buy *b + w = 3 + 6 = 9* white gifts at their original price of *1*.*b = 3*  of the gifts must be black, and the cost per conversion, *z = 1*. Total cost is *9 * 1 + 3 * 1 = 12*.
+
+• Test Case #04:
+Similarly, he will buy *w = 7* white gifts at their original price,*wc = 2*. For black gifts, he will first buy white ones and color them to black, so that their cost will be reduced to *wc + z = 2 + 1 = 3*. So cost of buying all gifts will be: *7 * 3 + 7 * 2 = 35*.
+
+• Test Case #05: 
+He will buy black gifts at their original price, *bc = 1*. For white gifts, he will first black gifts worth *bc = 1* unit and color them to white for *z = 2* units. The cost for white gifts is reduced to *wb = bc + z = 2 + 1 = 3* units. The cost of buying all gifts will be: *3 * 1 + 3 * 3 = 3 + 9 = 12*.
